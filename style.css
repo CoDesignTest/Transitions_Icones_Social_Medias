@@ -1,0 +1,45 @@
+/* Barre de navigation */
+
+nav {
+  margin: 5em auto;
+  width: 60%;
+}
+
+/* Disposition des icones */
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Taille des icones */
+
+.social__icons img {
+  width: 72px;
+}
+
+/* Configuration au départ sur icones */
+
+.social__icons a {
+  cursor: pointer;
+  background-image: linear-gradient(#000000, #000000);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: margin-top ease-in-out 1s, background-size ease-in-out 0.5s;
+  -webkit-transition: margin-top ease-in-out 1s,
+    background-size ease-in-out 0.5s;
+  -moz-transition: margin-top ease-in-out 1s, background-size ease-in-out 0.5s;
+  -ms-transition: margin-top ease-in-out 1s, background-size ease-in-out 0.5s;
+  -o-transition: margin-top ease-in-out 1s, background-size ease-in-out 0.5s;
+}
+
+/* Effet on hover sur icones */
+
+.social__icons a:hover,
+.social__icons a:focus,
+.social__icons a:active {
+  margin-top: -1em;
+  background-size: 100% 0.5em;
+}
